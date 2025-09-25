@@ -1,13 +1,41 @@
-# Python venv
+# venv
 .venv/
-
-# Byte-compiled / cache
+# python
 __pycache__/
-*.py[cod]
-
-# Jupyter
+*.pyc
+*.pyo
+*.pyd
+*.pid
+.python-version
+# pytest
+.pytest_cache/
+# notebooks
 .ipynb_checkpoints/
-
-# OS files
+# OS cruft
 .DS_Store
 Thumbs.db
+# editor
+.vscode/
+.idea/
+# local data
+sample_data/*.pdf
+# --- Day 6 standard ignores ---
+# Python
+.mypy_cache/
+.ruff_cache/
+# Node
+node_modules/
+dist/
+.vite/
+.parcel-cache/
+coverage/
+*.log
+# OS/Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+# Env / secrets (never commit)
+.env
+*.env
+.env.*
+secrets.*
