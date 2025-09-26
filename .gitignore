@@ -1,41 +1,55 @@
-# venv
+# --- Python ---
 .venv/
-# python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.pid
 .python-version
+
 # pytest
 .pytest_cache/
-# notebooks
+
+# Notebooks
 .ipynb_checkpoints/
+*.ipynb
+
 # OS cruft
 .DS_Store
 Thumbs.db
-# editor
+
+# Editor
 .vscode/
 .idea/
-# local data
-sample_data/*.pdf
+
+# Local data
+sample_data/*
+!sample_data/README.md   # keep placeholder
+
+# Backups
+*.bak
+*.bak.*
+
 # --- Day 6 standard ignores ---
-# Python
 .mypy_cache/
 .ruff_cache/
-# Node
+
+# --- Node ---
 node_modules/
 dist/
 .vite/
 .parcel-cache/
 coverage/
 *.log
-# OS/Editor
+
+# --- OS/Editor (refined) ---
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
-# Env / secrets (never commit)
+
+# --- Env / secrets ---
 .env
 *.env
 .env.*
 secrets.*
+app_data.db
