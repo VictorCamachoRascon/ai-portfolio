@@ -13,3 +13,4 @@ transformers
 scikit-learn
 nltk
 sentence-transformers
+SQLAlchemy==2.0.36
